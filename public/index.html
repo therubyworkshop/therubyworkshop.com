@@ -32,7 +32,6 @@
 
   <div class="container">
 
-    <!-- Main hero unit for a primary marketing message or call to action -->
     <header class="hero-unit">
       <h1>The <span class="ruby">Ruby</span> Workshop</h1>
       <h2>April 28th 2012</h2>
@@ -56,49 +55,88 @@
       <div class="row">
         <div class="span8">
           <iframe width="770" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=417+North+8th+Street+Philadelphia+PA+19123&amp;layer=c&amp;sll=39.959032,-75.151927&amp;cbp=13,134.36,,0,-10.86&amp;cbll=39.959371,-75.151893&amp;hl=en&amp;ie=UTF8&amp;hq=&amp;hnear=417+N+8th+St,+Philadelphia,+Pennsylvania+19123&amp;t=m&amp;panoid=bM-PDjrOWTgQbKMl88JDmA&amp;source=embed&amp;ll=39.95482,-75.151935&amp;spn=0.01579,0.036478&amp;z=14&amp;output=svembed"></iframe><br />
-          <p><a class="btn" href="http://maps.google.com/maps?q=417+North+8th+Street+Philadelphia+PA+19123&hl=en&ll=39.959191,-75.150513&spn=0.002915,0.005681&sll=40.075436,-75.20824&sspn=0.011641,0.022724&hnear=417+N+8th+St,+Philadelphia,+Pennsylvania+19123&t=m&z=18"><i class="icon-map-marker"></i> Get directions &raquo;</a></p>
         </div>
         <div class="span4">
           <p><a href="http://www.venturef0rth.com">VentureF0rth</a><br/>
           417 North 8th Street<br/>
           Philadelphia PA 19123</p>
+          <!-- TODO parking -->
+          <p><a class="btn" href="http://maps.google.com/maps?q=417+North+8th+Street+Philadelphia+PA+19123&hl=en&ll=39.959191,-75.150513&spn=0.002915,0.005681&sll=40.075436,-75.20824&sspn=0.011641,0.022724&hnear=417+N+8th+St,+Philadelphia,+Pennsylvania+19123&t=m&z=18"><i class="icon-map-marker"></i> Get directions &raquo;</a></p>
         </div>
       </div>
     </section>
 
-    <section id="requirements">
+    <section id="prepare">
       <div class="page-header">
         <h1>Come prepared <small>Just a few steps</small></h1>
       </div>
 
       <div class="row">
-        <div class="span8">
-          <h3>1. Download &amp; install Sublime Text 2</h3>
-          <p>
-          A cross-platform "sophisticated" text editor. <a href="http://www.sublimetext.com/2">Download free trial. </a>
-          </p>
-          <p>Other text editors are fine, but no IDEs please.</p>
-          <a href="http://www.sublimetext.com/2"><img src="img/sublime_text.png" class="icon" /></a>
-
-          <h3>2. Download &amp; install Git</h3>
-          <a href="http://git-scm.com"><img src="img/git.png" class="icon" /></a>
-
-          <h3>3. Download &amp; run a sample Ruby script</h3>
-          <p><a href="https://raw.github.com/therubyworkshop/lessons/master/hello.rb">Hello.rb</a></p>
-          <pre><code>cd /path/to/hello.rb
-ruby hello.rb</code></pre>
-          <a href="http://en.wikipedia.org/wiki/Terminal_(Mac_OS_X)"><img src="img/terminal.png" class="icon" /></a>
-          <a href="http://en.wikipedia.org/wiki/Command_Prompt"><img src="img/command_prompt.png" class="icon" /></a>
-        </div>
-
         <div class="span4">
-          <h3>Having trouble?</h3>
+          <h3>1. Install Ruby
+            <a href="http://www.ruby-lang.org/en/downloads/"><img align="right" src="img/ruby.png" class="icon" /></a>
+          </h3>
+          <p>You may already have Ruby installed!</p>
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#nix_ruby" data-toggle="tab">OS X / Linux</a></li>
+            <li><a href="#win_ruby" data-toggle="tab">Windows</a></li>
+          </ul>
+          <div class="tab-content">
+            <div id="nix_ruby" class="tab-pane active">
+              <p>To verify that you have Ruby installed
+              <ol>
+                <li>Download <a href="https://raw.github.com/therubyworkshop/lessons/master/hello.rb">this sample script</a>.</li>
+                <li>Open Terminal and run the following:
+                  <pre><code>cd /Users/&lt;Your Username&gt;/Downloads/
+ruby hello.rb</code></pre>
+                </li>
+                <li>If you do not see a friendly message, refer to <a href="http://www.ruby-lang.org/en/downloads/">ruby-lang.org</a> for instructions.</li>
+              </ol>
+            </div>
+            <div id="win_ruby" class="tab-pane">
+              <ol>
+                <li>Download <a href="https://raw.github.com/therubyworkshop/lessons/master/hello.rb">this sample script</a>.</li>
+                <li>Open the Command Prompt and run the following:
+                  <pre><code>cd \path\to\hello.rb
+ruby hello.rb</code></pre>
+                </li>
+                <li>If you do not see a friendly message, refer to <a href="http://railsinstaller.org">RailsInstaller</a> for instructions. Note, the RailsInstaller will also install Git for you!</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="span4">
+          <h3>2. Install Git
+            <a href="http://git-scm.com"><img align="right" src="img/git.png" class="icon" /></a>
+          </h3>
+          <p>A free version control system.</p>
+          <p>Though it's awesome, we won't be covering Git in detail. However, you'll need it to create a live web app.</p>
+          <p>
+          <a href="http://git-scm.com/download">Download Git for free here.</a>
+          </p>
+        </div>
+        <div class="span4">
+          <h3>3. Install Sublime Text 2
+            <a href="http://www.sublimetext.com/2"><img align="right" src="img/sublime_text.png" class="icon" /></a>
+          </h3>
+          <p>A cross-platform "sophisticated" text editor.</p>
+          <p>Other text editors are fine, but no IDEs please.</p>
+          <p>
+          <a href="http://www.sublimetext.com/2">Download a free trial here.</a>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12">
+          <h2>Having trouble?</h2>
           <p>Find some help <a href="help.html">here</a>.</p>
+          <p>If you're still having trouble after visting the help page, come to the workshop early at 11AM. We'll get you set up!</p>
         </div>
       </div>
     </section>
 
-    <section>
+    <!--
+    <section id="sponsors">
       <div class="page-header">
         <h1>The Sponsors</h1>
       </div>
@@ -106,7 +144,8 @@ ruby hello.rb</code></pre>
         <li><a href="http://venturef0rth.com"><img src="img/venturef0rth.png" /></a></li>
       </ul>
     </section>
-    <section>
+
+    <section id="materials">
       <div class="page-header">
         <h1>The Material</h1>
       </div>
@@ -117,13 +156,6 @@ ruby hello.rb</code></pre>
       </ul>
       <p><small>Note that all materials are subject to change up until (and during) the event.</small></p>
     </section>
-
-    <!--
-    TODO
-    parking
-    course materials
-    syllabus
-    more resources
     -->
 
     <hr>
